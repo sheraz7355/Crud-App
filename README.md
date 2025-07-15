@@ -18,7 +18,7 @@ A simple web-based **CRUD (Create, Read, Update, Delete)** application built usi
 
 ### 📊 Dashboard View
 
-<img src="screenshots/dashboard.png" alt="Dashboard Screenshot" width="600"/>
+<img src="assets/image1.png" alt="Dashboard" width="600"/>
 
 Displays a full list of students with **Update** and **Delete** actions.
 
@@ -26,7 +26,7 @@ Displays a full list of students with **Update** and **Delete** actions.
 
 ### ➕ Add Student Modal
 
-<img src="screenshots/add-student-modal.png" alt="Add Student Modal" width="600"/>
+<img src="assets/image2.png" alt="Add Student Modal" width="600"/>
 
 Opens a Bootstrap modal form to enter new student details.
 
@@ -34,7 +34,7 @@ Opens a Bootstrap modal form to enter new student details.
 
 ### ✏️ Update Page
 
-<img src="screenshots/update-page.png" alt="Update Page" width="600"/>
+<img src="assets/image3.png" alt="Update Page" width="600"/>
 
 Redirects to a separate form to update existing student data.
 
