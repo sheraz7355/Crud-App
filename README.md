@@ -1,121 +1,101 @@
-# 📝 PHP CRUD Application with MySQL and XAMPP
+# PHP CRUD App with MySQL and Bootstrap
 
-This is a simple web-based **CRUD application** built using **PHP**, **MySQL**, and **Bootstrap 5**, designed to manage student records. The application allows users to create, read, update, and delete data in a clean, responsive interface.
-
----
-
-## 📌 Features
-
-- View all student records in a table  
-- Add a new student using a Bootstrap modal  
-- Edit student information  
-- Delete student entries with confirmation  
-- Success message display after each action  
+A simple web-based **CRUD (Create, Read, Update, Delete)** application built using **PHP**, **MySQL**, and **Bootstrap 5**. It helps you manage student records with options to add, edit, and delete entries.
 
 ---
 
-## 🛠 Technologies Used
+## 🔥 Features
 
-- PHP (Core logic)  
-- MySQL (Database)  
-- HTML/CSS (Frontend)  
-- Bootstrap 5 (Styling and responsiveness)  
-- XAMPP (Local server environment)  
-
----
-
-## 🖥️ How to Set Up Locally
-
-### ✅ 1. Install XAMPP
-
-- Download and install from: [https://www.apachefriends.org](https://www.apachefriends.org)  
-- Launch XAMPP and start:
-  - **Apache**
-  - **MySQL**
+- Add new students using a Bootstrap modal
+- Display all students in a responsive Bootstrap table
+- Edit student info on a separate update page
+- Delete records directly from the list
+- Feedback messages for successful actions
 
 ---
 
-### ✅ 2. Create the Database
+## 🖼️ Interface Preview
 
-1. Open [http://localhost/phpmyadmin](http://localhost/phpmyadmin)  
-2. Click **"New"** and create a database named:
-   ```
-   crudapp
-   ```
-3. Run this SQL to create the `student` table:
-   ```sql
-   CREATE TABLE student (
-       id INT AUTO_INCREMENT PRIMARY KEY,
-       first_name VARCHAR(100),
-       last_name VARCHAR(100),
-       age INT
-   );
-   ```
+### 📊 Dashboard View
+
+<img src="screenshots/dashboard.png" alt="Dashboard Screenshot" width="600"/>
+
+Displays a full list of students with **Update** and **Delete** actions.
 
 ---
 
-### ✅ 3. Project Folder Structure
+### ➕ Add Student Modal
 
-Place your project folder inside:
+<img src="screenshots/add-student-modal.png" alt="Add Student Modal" width="600"/>
+
+Opens a Bootstrap modal form to enter new student details.
+
+---
+
+### ✏️ Update Page
+
+<img src="screenshots/update-page.png" alt="Update Page" width="600"/>
+
+Redirects to a separate form to update existing student data.
+
+---
+
+## 🛠️ Setup Instructions
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/sheraz7355/Crud-App.git
+cd Crud-App
 
 ```
-C:\xampp\htdocs\
-```
+### 2. Start XAMPP
+Open the XAMPP Control Panel
+Start both Apache and MySQL
+3. Create MySQL Database
+Go to: http://localhost/phpmyadmin
+Create a database called: crudapp
 
-Your project directory should look like this:
+### 3. Run this SQL query to create the table:
+ ```
+    CREATE TABLE student (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  first_name VARCHAR(100),
+  last_name VARCHAR(100),
+  age INT
+);
 
 ```
-crudapp/
-├── index.php
-├── update_page.php
-├── delete_page.php
+### 4. ▶️ Run the App
+
+Move your project folder into:
+macOS: /Applications/XAMPP/xamppfiles/htdocs/
+Windows: C:\xampp\htdocs\
+Then visit in your browser:
+
+```
+   http://localhost/crudapp/
+
+```
+### 5. 📁 Folder Structure
+```
+  crudapp/
 ├── add_student.php
 ├── connect.php
-├── header.php
+├── delete_page.php
 ├── footer.php
+├── header.php
+├── index.php
 ├── style.css
-└── README.md
+├── update_page.php
+├── README.md
+└── screenshots/
+    ├── dashboard.png
+    ├── add-student-modal.png
+    └── update-page.png
 ```
+# 👤 Author
 
----
-
-### ✅ 4. Run the App
-
-Open your browser and go to:
-
-```
-http://localhost/crudapp/index.php
-```
-
----
-
-## 🧠 File Descriptions
-
-- `index.php` – Displays student records + modal form to add new student  
-- `add_student.php` – Handles form submission and inserts data  
-- `update_page.php` – Shows update form and performs update  
-- `delete_page.php` – Deletes student record  
-- `connect.php` – MySQL connection script  
-- `header.php` / `footer.php` – Common page layout  
-- `style.css` – Custom styles for layout  
-- `README.md` – This instruction file  
-
----
-
-## 🔐 Security Recommendations
-
-- Use **prepared statements** to prevent SQL injection  
-- Sanitize and validate all form input  
-- Escape output using `htmlspecialchars()` to prevent XSS  
-
----
-
-## 🙌 Author
-
-Developed by **[Muhammad-Sheraz ]**
-
----
-
-## 📜 License
-
-This project is for educational purposes. Free to use, modify, and share.
+ Muhammad Sheraz
+GitHub: @sheraz7355
+            
